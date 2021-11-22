@@ -39,15 +39,12 @@ const bitcoinPrice = btcPrice.map((item) => item.current_price)[0]
           >
               Volume(24h)
           </th>
-          <div className='lg:flex hidden '>
 
           <th
             scope="col"
-            className="sm:w-44 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            className="sm:w-44 px-6 lg:flex hidden  py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
           >Country 
           </th>
-          </div> 
-
         </tr>
       </thead>
       <tbody>
@@ -72,15 +69,15 @@ const bitcoinPrice = btcPrice.map((item) => item.current_price)[0]
                       </a>
                     </Link>
                     </td>
-                        <div 
+                        <td 
                             className={`w-12 h-7 ml-9 mt-6  md:flex hidden justify-center text-white rounded-xl 
                                 ${exchange?.trust_score > 8 ? 'bg-green' : 'bg-red' }`
                             }
                         >
-                          <td className="sm:px-6  whitespace-nowrap">
+                          <div className="sm:px-6  whitespace-nowrap">
                               {exchange?.trust_score}
-                          </td>
-                        </div>
+                          </div>
+                        </td>
                     <td className="sm:px-6 pr-2 py-4 whitespace-nowrap">
                          <div className={`text-sm  text-gray-900`}>${Math.floor(exchange?.trade_volume_24h_btc * bitcoinPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
                     </td>

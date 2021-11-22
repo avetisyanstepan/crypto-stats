@@ -72,23 +72,18 @@ const Table = ({marketCoins}: TableProps) => {
           >
             24h %
           </th>
-          <div className='lg:flex hidden '>
-
           <th
             scope="col"
-            className="sm:w-44 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            className="sm:w-44 lg:flex hidden  px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
           >
                 Market Cap
           </th>
-
           <th
             scope="col"
-            className="px-10  py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            className="px-10 lg:flex hidden   py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
           >
                 Volume(24h)
           </th>
-          </div> 
-
         </tr>
       </thead>
       <tbody>
@@ -121,14 +116,12 @@ const Table = ({marketCoins}: TableProps) => {
                       {coin?.price_change_percentage_24h.toString().slice(0,4)}%
                     </div>
                 </td>
-                <div className='lg:flex hidden '>
                 <td className="px-6 py-6 w-48  whitespace-nowrap text-sm text-black-500">
                       ${coin?.market_cap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-                  </td>
+                </td>
                 <td className="px-6 py-6 text-left whitespace-nowrap text-sm text-black-500">
                     ${coin?.total_volume.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
                 </td>
-                </div>  
                
 
               </tr>

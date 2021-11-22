@@ -97,9 +97,6 @@ const Header = ({children}:HeaderProps) => {
                           
                       </div>    
                     }
-
-
-           
                 {children}
             </div>
         </div>
