@@ -60,7 +60,7 @@ const bitcoinPrice = btcPrice.map((item) => item.current_price)[0]
                           </div>    
                         <div className="flex-shrink-0 h-10 w-10">
                             
-                          <img className="h-10 w-10 rounded-full" src={exchange?.image} alt="" />
+                          <img className="h-10 w-10 rounded-full" src={exchange?.image} alt="crypto-stats" />
                         </div>
                         <div className="sm:ml-4 ml-2">
                           <div className="text-sm font-medium text-gray-900">{exchange?.name}</div>
