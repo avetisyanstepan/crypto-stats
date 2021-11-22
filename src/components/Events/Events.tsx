@@ -15,9 +15,9 @@ export const Events = ({eventsData}:EventsProps) => {
     return (
         <Header>
             <div className='md:flex-row flex flex-col  mt-24'>
-                {eventsData?.data.map((event,key) => (
+                {eventsData?.data.map((event,i) => (
                     <div    
-                        key={`${event?.organizer}+${key}`} 
+                        key={`${event.organizer}+${i}`} 
                         className='flex flex-col shadow-xl md:mr-4 mx-4 md:mb-0 mb-4 rounded-lg bg-blue cursor-pointer transform duration-500 translate hover:opacity-90 hover:scale-105'>
                         <div className="flex h-64 object-cover">
                             <img src={event?.screenshot} className='rounded-t-lg' />
