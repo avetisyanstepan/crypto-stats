@@ -48,7 +48,7 @@ const Table = ({marketCoins}: TableProps) => {
     return (
       <Header>
       <div className="flex flex-col max-w-screen-lg m-auto mt-4 ">
-      <div className='flex flex-grow justify-end mb-4'>
+        <div className='flex flex-grow justify-end mb-4'>
           <input  
             type='text' 
             className='w-32 border h-10 bg-gray-100 outline-none border-gray bg-gray rounded-2xl pl-4' 

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import Link from 'next/link'
-import { Images } from '../envaironmnet/Images'
 import { VscListFlat, VscChromeClose } from "react-icons/vsc";
+import { Images } from '../envaironment/Images'
 
 
 interface HeaderProps {

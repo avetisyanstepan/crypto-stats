@@ -26,7 +26,7 @@ export const Events = ({eventsData}:EventsProps) => {
 
                         <span className='text-center mt-4 text-gray text-xl font-semibold'>Orgainaizer: 
                             <span className='text-2xl ml-2 text-white'>
-                                 {event?.organizer}
+                                {event?.organizer}
                             </span>
                         </span>
                         <span className='text-center text-xl mt-10 ml-5 text-white'>{event?.title}</span>

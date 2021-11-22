@@ -79,7 +79,9 @@ const bitcoinPrice = btcPrice.map((item) => item.current_price)[0]
                           </div>
                         </td>
                     <td className="sm:px-6 pr-2 py-4 whitespace-nowrap">
-                         <div className={`text-sm  text-gray-900`}>${Math.floor(exchange?.trade_volume_24h_btc * bitcoinPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
+                         <div className={`text-sm  text-gray-900`}>
+                           ${Math.floor(exchange?.trade_volume_24h_btc * bitcoinPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                          </div>
                     </td>
                     <td className="lg:block hidden px-6 py-4 w-auto whitespace-nowrap text-sm text-black-500">{exchange?.country}</td>
                   </tr>
